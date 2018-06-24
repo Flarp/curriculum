@@ -41,9 +41,7 @@
             "assert(quote === \"Oliver says Meow!\", '<code>quote</code> should be <code>\"Oliver says Meow!\"</code>');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -103,9 +101,7 @@
             "assert(checkScope() === \"function scope\", '<code>checkScope()</code> should return \"function scope\"');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -163,9 +159,7 @@
             "getUserInput => assert(getUserInput('index').match(/console\\.log\\(\\s*SENTENCE\\s*\\)\\s*;?/g), '<code>console.log</code> should be adjusted to print the variable <code>SENTENCE</code>.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -227,9 +221,7 @@
             "assert.deepEqual(s, [2, 5, 7], '<code>s</code> should be equal to <code>[2, 5, 7]</code>.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -285,9 +277,7 @@
             "assert(PI === 3.14, '<code>PI</code> equals <code>3.14</code>.');"
         }
       ],
-      "releasedOn": "Aug 12, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -360,9 +350,7 @@
             "getUserInput => assert(!getUserInput('index').match(/function/g), '<code>function</code> keyword was not used.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -418,9 +406,7 @@
             "getUserInput => assert(!getUserInput('index').match(/function/g), '<code>function</code> keyword was not used.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -494,9 +480,7 @@
             "getUserInput => assert(getUserInput('index').match(/map|filter|reduce/g), '<code>map</code>, <code>filter</code>, or <code>reduce</code> should be used');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -551,9 +535,7 @@
             "getUserInput => assert(getUserInput('index').match(/value\\s*=\\s*1/g), 'default parameter <code>1</code> was used for <code>value</code>.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -613,9 +595,7 @@
             "getUserInput => assert(getUserInput('index').match(/function\\s+sum\\s*\\(\\s*...args\\s*\\)\\s*{/g), 'The <code>sum</code> function uses the <code>...</code> spread operator on the <code>args</code> parameter.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -671,9 +651,7 @@
             "assert((arr1, arr2) => {arr1.push('JUN'); return arr2.length < arr1.length},'<code>arr2</code> remains unchanged when <code>arr1</code> is changed.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -727,9 +705,7 @@
             "getUserInput => assert(getUserInput('index').match(/\\{\\s*length\\s*:\\s*len\\s*}\\s*=\\s*str/g),'destructuring with reassignment was used');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -778,9 +754,7 @@
             "getUserInput => assert(getUserInput('index').match(/\\{\\s*tomorrow\\s*:\\s*\\{\\s*max\\s*:\\s*maxOfTomorrow\\s*\\}\\s*\\}\\s*=\\s*forecast/g),'nested destructuring was used');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -838,9 +812,7 @@
             "// assert(/\\[\\s*(\\w)\\s*,\\s*(\\w)\\s*\\]\\s*=\\s*\\[\\s*\\2\\s*,\\s*\\1\\s*\\]/g.test(code), 'Use array destructuring to swap a and b.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -892,9 +864,7 @@
             "getUserInput => assert(!getUserInput('index').match(/Array.slice/g), '<code>Array.slice()</code> was not used.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -950,9 +920,7 @@
             "getUserInput => assert(getUserInput('index').match(/\\(\\s*\\{\\s*\\w+\\s*,\\s*\\w+\\s*\\}\\s*\\)/g), 'Destructuring was used.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -1018,9 +986,7 @@
             "getUserInput => assert(getUserInput('index').match(/\\`<li class=\"text-warning\">\\$\\{\\w+\\}<\\/li>\\`/g), 'Template strings were used');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -1081,9 +1047,7 @@
             "getUserInput => assert(!getUserInput('index').match(/:/g), 'No <code>:</code> were used.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -1131,9 +1095,7 @@
             "getUserInput => assert(!getUserInput('index').match(/:\\s*function\\s*\\(\\)/g), 'Declarative function was used.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -1190,9 +1152,7 @@
             "assert(() => {const a = new Vegetable(\"apple\"); return typeof a === 'object';},'<code>Vegetable</code> can be instantiated.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -1253,9 +1213,7 @@
             "assert(() => {const t = new Thermostat(32); return typeof t === 'object' && t.temperature === 0;}, '<code>Thermostat</code> can be instantiated.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -1304,9 +1262,7 @@
             "getUserInput => assert(getUserInput('index').match(/import\\s+\\{\\s?capitalizeString\\s?\\}\\s+from\\s+\"string_functions\"/g), 'valid <code>import</code> statement');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -1349,9 +1305,7 @@
             "getUserInput => assert(getUserInput('index').match(/export\\s+const\\s+bar\\s+=+\\s\"foo\"/g), '<code>bar</code> is exported.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -1387,9 +1341,7 @@
             "assert(code.match(/import\\s+\\*\\s+as\\s+[a-zA-Z0-9_$]+\\s+from\\s*\"\\s*capitalize_strings\\s*\"\\s*;/gi), 'Properly uses <code>import * as</code> syntax.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -1427,9 +1379,7 @@
             "getUserInput => assert(getUserInput('index').match(/export\\s+default\\s+function\\s+subtract\\(x,y\\)\\s+{return\\s+x\\s-\\s+y;}/g), 'Proper used of <code>export</code> fallback.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -1462,9 +1412,7 @@
             "getUserInput => assert(getUserInput('index').match(/import\\s+subtract\\s+from\\s+\"math_functions\"/g), 'Properly imports <code>export default</code> method.');"
         }
       ],
-      "releasedOn": "Feb 17, 2017",
       "challengeType": 1,
-      "translations": {},
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -1481,6 +1429,34 @@
           "tail": []
         }
       }
+    },
+    {
+      "id": "587d7b8d367417b2b2512b5a",
+      "title": "(Re)-introducing Iterators with for..of",
+      "description": [
+        "In the lesson <a href=\"/javascript-algorithms-and-data-structures/basic-javascript/iterate-through-an-array-with-a-for-loop/\">Iterate Through an Array with a For Loop</a>, you learned how to use <i>iteration</i>, repeating a block of code multiple times, to process every element of an array. Before ES6, iteration was done using C-like for loops (<code>for (initial; final; increment) { ... }</code>) and while loops.",
+        "ES6 introduced a new kind of for loop, <code>for..of</code>. This new syntax not only provides a prettier way to iterate over arrays, it allows us to use a new feature added in ES6, called <i>iterators</i>.",
+        "For now, let's get accustomed to the <code>for..of</code> syntax. Finish the following program to output each item of the <code>iteration</code> array. ",
+        "The syntax of <code>for..of</code> is\n<code>\nfor (let variable of iterable) {\n    // ...\n}\n</code>"
+      ],
+      "tests": [],
+      "challengeType": 1,
+      "files": {
+        "indexjs": {
+          "key": "indexjs",
+          "ext": "js",
+          "name": "index",
+          "contents": [
+            "const iteration = [1,2,3,4]",
+            "for (x of iteration) {",
+            "  // finish the program here",
+            "}"
+          ],
+          "head": [],
+          "tail": []
+        }
+      },
+      "challengeSeed": []
     }
   ]
 }
