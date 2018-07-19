@@ -1432,7 +1432,7 @@
     },
     {
       "id": "587d7b8d367417b2b2512b5a",
-      "title": "(Re)-introducing Iterators with for..of",
+      "title": "(Re-)Introducing Iterators",
       "description": [
         "In the lesson <a href=\"/javascript-algorithms-and-data-structures/basic-javascript/iterate-through-an-array-with-a-for-loop/\">Iterate Through an Array with a For Loop</a>, you learned how to use <i>iteration</i>, repeating a block of code multiple times, to process every element of an array. Before ES6, iteration was done using C-like for loops (<code>for (initial; final; increment) { ... }</code>) and while loops.",
         "ES6 introduced a new kind of for loop, <code>for..of</code>. This new syntax not only provides a prettier way to iterate over arrays, it allows us to use a new feature added in ES6, called <i>iterators</i>.",
@@ -1457,6 +1457,51 @@
         }
       },
       "challengeSeed": []
+    },
+    {
+      "id": "587d7b8d367417b2b2512b5b",
+      "title": "For What?",
+      "description": [
+        "It's pretty obvious what's going through your mind.",
+        "<i>How does some fancy new for-loop syntax introduce a whole set of features in ES6?</i>",
+        "What you wrote merely scratches the surface of ES6 iterators. Iterators allows programmers to customize how an object is iterated over, so you can implement things like binary trees, or graphs."
+      ],
+      "files": {
+        "indexjs": {
+          "key": "indexjs",
+          "ext": "js",
+          "name": "index",
+          "contents": [
+            "const rand_list = new RandList([0,1,2,3,4,5,6,7,8,9])",
+            "for (let y = 0; y < 3; y++) {",
+            "  for (let x of rand_list) {",
+            "    console.log(x)",
+            "  }",
+            "}"
+          ],
+          "head": [
+            "// from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array",
+            "const horrid_shuffler = list => list.sort(_ => 0.5 - Math.random())",
+            "",
+            "const RandList = function(list) {",
+            "  this.inside = list",
+            "  this[Symbol.iterator] = function() {",
+            "this.list = horrid_shuffler(list)",
+            "    this.last = 0",
+            "    return {",
+            "      next: () => {",
+            "        if (this.last === this.list.length) {",
+            "          return { done: true }",
+            "        } else {",
+            "          return {value: this.list[++this.last], done: false }",
+            "        }",
+            "      }",
+            "    }",
+            "  }",
+            "}"
+          ]
+        }
+      }
     }
   ]
 }

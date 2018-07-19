@@ -31,13 +31,7 @@
       ],
       "tests": [],
       "isRequired": true,
-      "releasedOn": "January 1, 2016",
-      "challengeType": 3,
-      "translations": {
-        "es": {
-          "title": "Visualiza datos utilizando un gráfico de barras"
-        }
-      }
+      "challengeType": 3
     },
     {
       "id": "bd7178d8c242eddfaeb5bd13",
@@ -68,13 +62,7 @@
       ],
       "tests": [],
       "isRequired": true,
-      "releasedOn": "January 1, 2016",
-      "challengeType": 3,
-      "translations": {
-        "es": {
-          "title": "Visualiza datos utilizando un gráfico de dispersión"
-        }
-      }
+      "challengeType": 3
     },
     {
       "id": "bd7188d8c242eddfaeb5bd13",
@@ -107,13 +95,7 @@
       ],
       "tests": [],
       "isRequired": true,
-      "releasedOn": "January 1, 2016",
-      "challengeType": 3,
-      "translations": {
-        "es": {
-          "title": "Visualiza datos utilizando un mapa de calor"
-        }
-      }
+      "challengeType": 3
     },
     {
       "id": "587d7fa6367417b2b2512bbf",
@@ -140,9 +122,7 @@
       ],
       "tests": [],
       "isRequired": true,
-      "releasedOn": "February 17, 2017",
-      "challengeType": 3,
-      "translations": {}
+      "challengeType": 3
     },
     {
       "id": "587d7fa6367417b2b2512bc0",
@@ -169,9 +149,7 @@
       ],
       "tests": [],
       "isRequired": true,
-      "releasedOn": "February 17, 2017",
-      "challengeType": 3,
-      "translations": {}
+      "challengeType": 3
     }
   ]
 }

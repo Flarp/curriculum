@@ -23,21 +23,9 @@
         "Once you're done, submit the URL to your working project with all its tests passing.",
         "Remember to use the <a href='https://forum.freecodecamp.org/t/how-to-get-help-when-you-are-stuck/19514' target='_blank'>Read-Search-Ask</a> method if you get stuck."
       ],
-      "releasedOn": "January 1, 2016",
       "tests": [],
       "isRequired": true,
-      "challengeType": 3,
-      "translations": {
-        "es": {
-          "title": "Construye una página Tributo"
-        },
-        "pt-br": {
-          "title": "Construa uma Página Tributo"
-        },
-        "ru": {
-          "title": "Создайте страницу посвященную тому что вас вдохновляет"
-        }
-      }
+      "challengeType": 3
     },
     {
       "id": "587d78af367417b2b2512b03",
@@ -66,11 +54,9 @@
         "Once you're done, submit the URL to your working project with all its tests passing.",
         "Remember to use the <a href='https://forum.freecodecamp.org/t/how-to-get-help-when-you-are-stuck/19514' target='_blank'>Read-Search-Ask</a> method if you get stuck."
       ],
-      "releasedOn": "January 15, 2017",
       "tests": [],
       "isRequired": true,
-      "challengeType": 3,
-      "translations": {}
+      "challengeType": 3
     },
     {
       "id": "587d78af367417b2b2512b04",
@@ -98,11 +84,9 @@
         "Once you're done, submit the URL to your working project with all its tests passing.",
         "Remember to use the <a href='https://forum.freecodecamp.org/t/how-to-get-help-when-you-are-stuck/19514' target='_blank'>Read-Search-Ask</a> method if you get stuck."
       ],
-      "releasedOn": "January 15, 2017",
       "tests": [],
       "isRequired": true,
-      "challengeType": 3,
-      "translations": {}
+      "challengeType": 3
     },
     {
       "id": "587d78b0367417b2b2512b05",
@@ -130,11 +114,9 @@
         "Once you're done, submit the URL to your working project with all its tests passing.",
         "Remember to use the <a href='https://forum.freecodecamp.org/t/how-to-get-help-when-you-are-stuck/19514' target='_blank'>Read-Search-Ask</a> method if you get stuck."
       ],
-      "releasedOn": "January 15, 2017",
       "tests": [],
       "isRequired": true,
-      "challengeType": 3,
-      "translations": {}
+      "challengeType": 3
     },
     {
       "id": "bd7158d8c242eddfaeb5bd13",
@@ -160,18 +142,7 @@
       ],
       "tests": [],
       "isRequired": true,
-      "challengeType": 3,
-      "translations": {
-        "es": {
-          "title": "Construye una página web para tu portafolio"
-        },
-        "pt-br": {
-          "title": "Construa uma Página de Portfólio Pessoal"
-        },
-        "ru": {
-          "title": "Создайте сайт-портфолио"
-        }
-      }
+      "challengeType": 3
     }
   ]
 }
