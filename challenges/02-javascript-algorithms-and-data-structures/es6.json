@@ -26,19 +26,15 @@
       "tests": [
         {
           "text": "<code>var</code> does not exist in code.",
-          "testString":
-            "getUserInput => assert(!getUserInput('index').match(/var/g),'<code>var</code> does not exist in code.');"
+          "testString": "getUserInput => assert(!getUserInput('index').match(/var/g),'<code>var</code> does not exist in code.');"
         },
         {
           "text": "<code>catName</code> should be <code>Oliver</code>.",
-          "testString":
-            "assert(catName === \"Oliver\", '<code>catName</code> should be <code>Oliver</code>.');"
+          "testString": "assert(catName === \"Oliver\", '<code>catName</code> should be <code>Oliver</code>.');"
         },
         {
-          "text":
-            "<code>quote</code> should be <code>\"Oliver says Meow!\"</code>",
-          "testString":
-            "assert(quote === \"Oliver says Meow!\", '<code>quote</code> should be <code>\"Oliver says Meow!\"</code>');"
+          "text": "<code>quote</code> should be <code>\"Oliver says Meow!\"</code>",
+          "testString": "assert(quote === \"Oliver says Meow!\", '<code>quote</code> should be <code>\"Oliver says Meow!\"</code>');"
         }
       ],
       "challengeType": 1,
@@ -86,19 +82,15 @@
       "tests": [
         {
           "text": "<code>var</code> does not exist in code.",
-          "testString":
-            "getUserInput => assert(!getUserInput('index').match(/var/g),'<code>var</code> does not exist in code.');"
+          "testString": "getUserInput => assert(!getUserInput('index').match(/var/g),'<code>var</code> does not exist in code.');"
         },
         {
-          "text":
-            "The variable <code>i</code> declared in the if statement should equal \"block scope\".",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/(i\\s*=\\s*).*\\s*.*\\s*.*\\1('|\")block\\s*scope\\2/g), 'The variable <code>i</code> declared in the if statement should equal \"block scope\".');"
+          "text": "The variable <code>i</code> declared in the if statement should equal \"block scope\".",
+          "testString": "getUserInput => assert(getUserInput('index').match(/(i\\s*=\\s*).*\\s*.*\\s*.*\\1('|\")block\\s*scope\\2/g), 'The variable <code>i</code> declared in the if statement should equal \"block scope\".');"
         },
         {
           "text": "<code>checkScope()</code> should return \"function scope\"",
-          "testString":
-            "assert(checkScope() === \"function scope\", '<code>checkScope()</code> should return \"function scope\"');"
+          "testString": "assert(checkScope() === \"function scope\", '<code>checkScope()</code> should return \"function scope\"');"
         }
       ],
       "challengeType": 1,
@@ -138,25 +130,19 @@
       "tests": [
         {
           "text": "<code>var</code> does not exist in your code.",
-          "testString":
-            "getUserInput => assert(!getUserInput('index').match(/var/g),'<code>var</code> does not exist in your code.');"
+          "testString": "getUserInput => assert(!getUserInput('index').match(/var/g),'<code>var</code> does not exist in your code.');"
         },
         {
-          "text":
-            "<code>SENTENCE</code> should be a constant variable declared with <code>const</code>.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/(const SENTENCE)/g), '<code>SENTENCE</code> should be a constant variable declared with <code>const</code>.');"
+          "text": "<code>SENTENCE</code> should be a constant variable declared with <code>const</code>.",
+          "testString": "getUserInput => assert(getUserInput('index').match(/(const SENTENCE)/g), '<code>SENTENCE</code> should be a constant variable declared with <code>const</code>.');"
         },
         {
           "text": "<code>i</code> should be declared with <code>let</code>.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/(let i)/g), '<code>i</code> should be declared with <code>let</code>.');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/(let i)/g), '<code>i</code> should be declared with <code>let</code>.');"
         },
         {
-          "text":
-            "<code>console.log</code> should be changed to print the <code>SENTENCE</code> variable.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/console\\.log\\(\\s*SENTENCE\\s*\\)\\s*;?/g), '<code>console.log</code> should be adjusted to print the variable <code>SENTENCE</code>.');"
+          "text": "<code>console.log</code> should be changed to print the <code>SENTENCE</code> variable.",
+          "testString": "getUserInput => assert(getUserInput('index').match(/console\\.log\\(\\s*SENTENCE\\s*\\)\\s*;?/g), '<code>console.log</code> should be adjusted to print the variable <code>SENTENCE</code>.');"
         }
       ],
       "challengeType": 1,
@@ -201,24 +187,19 @@
       "tests": [
         {
           "text": "Do not replace <code>const</code> keyword.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/const/g), 'Do not replace <code>const</code> keyword.');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/const/g), 'Do not replace <code>const</code> keyword.');"
         },
         {
-          "text":
-            "<code>s</code> should be a constant variable (by using <code>const</code>).",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/const\\s+s/g), '<code>s</code> should be a constant variable (by using <code>const</code>).');"
+          "text": "<code>s</code> should be a constant variable (by using <code>const</code>).",
+          "testString": "getUserInput => assert(getUserInput('index').match(/const\\s+s/g), '<code>s</code> should be a constant variable (by using <code>const</code>).');"
         },
         {
           "text": "Do not change the original array declaration.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/const\\s+s\\s*=\\s*\\[\\s*5\\s*,\\s*7\\s*,\\s*2\\s*\\]\\s*;?/g), 'Do not change the original array declaration.');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/const\\s+s\\s*=\\s*\\[\\s*5\\s*,\\s*7\\s*,\\s*2\\s*\\]\\s*;?/g), 'Do not change the original array declaration.');"
         },
         {
           "text": "<code>s</code> should be equal to <code>[2, 5, 7]</code>.",
-          "testString":
-            "assert.deepEqual(s, [2, 5, 7], '<code>s</code> should be equal to <code>[2, 5, 7]</code>.');"
+          "testString": "assert.deepEqual(s, [2, 5, 7], '<code>s</code> should be equal to <code>[2, 5, 7]</code>.');"
         }
       ],
       "challengeType": 1,
@@ -257,24 +238,19 @@
       "tests": [
         {
           "text": "Do not replace <code>const</code> keyword.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/const/g), 'Do not replace <code>const</code> keyword.');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/const/g), 'Do not replace <code>const</code> keyword.');"
         },
         {
-          "text":
-            "<code>MATH_CONSTANTS</code> should be a constant variable (by using <code>const</code>).",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/const\\s+MATH_CONSTANTS/g), '<code>MATH_CONSTANTS</code> should be a constant variable (by using <code>const</code>).');"
+          "text": "<code>MATH_CONSTANTS</code> should be a constant variable (by using <code>const</code>).",
+          "testString": "getUserInput => assert(getUserInput('index').match(/const\\s+MATH_CONSTANTS/g), '<code>MATH_CONSTANTS</code> should be a constant variable (by using <code>const</code>).');"
         },
         {
           "text": "Do not change original <code>MATH_CONSTANTS</code>.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/const\\s+MATH_CONSTANTS\\s+=\\s+{\\s+PI:\\s+3.14\\s+};/g), 'Do not change original <code>MATH_CONSTANTS</code>.');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/const\\s+MATH_CONSTANTS\\s+=\\s+{\\s+PI:\\s+3.14\\s+};/g), 'Do not change original <code>MATH_CONSTANTS</code>.');"
         },
         {
           "text": "<code>PI</code> equals <code>3.14</code>.",
-          "testString":
-            "assert(PI === 3.14, '<code>PI</code> equals <code>3.14</code>.');"
+          "testString": "assert(PI === 3.14, '<code>PI</code> equals <code>3.14</code>.');"
         }
       ],
       "challengeType": 1,
@@ -325,29 +301,23 @@
       "tests": [
         {
           "text": "User did replace <code>var</code> keyword.",
-          "testString":
-            "getUserInput => assert(!getUserInput('index').match(/var/g), 'User did replace <code>var</code> keyword.');"
+          "testString": "getUserInput => assert(!getUserInput('index').match(/var/g), 'User did replace <code>var</code> keyword.');"
         },
         {
-          "text":
-            "<code>magic</code> should be a constant variable (by using <code>const</code>).",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/const\\s+magic/g), '<code>magic</code> should be a constant variable (by using <code>const</code>).');"
+          "text": "<code>magic</code> should be a constant variable (by using <code>const</code>).",
+          "testString": "getUserInput => assert(getUserInput('index').match(/const\\s+magic/g), '<code>magic</code> should be a constant variable (by using <code>const</code>).');"
         },
         {
           "text": "<code>magic</code> is a <code>function</code>.",
-          "testString":
-            "assert(typeof magic === 'function', '<code>magic</code> is a <code>function</code>.');"
+          "testString": "assert(typeof magic === 'function', '<code>magic</code> is a <code>function</code>.');"
         },
         {
           "text": "<code>magic()</code> returns correct date.",
-          "testString":
-            "assert(magic().getDate() == new Date().getDate(), '<code>magic()</code> returns correct date.');"
+          "testString": "assert(magic().getDate() == new Date().getDate(), '<code>magic()</code> returns correct date.');"
         },
         {
           "text": "<code>function</code> keyword was not used.",
-          "testString":
-            "getUserInput => assert(!getUserInput('index').match(/function/g), '<code>function</code> keyword was not used.');"
+          "testString": "getUserInput => assert(!getUserInput('index').match(/function/g), '<code>function</code> keyword was not used.');"
         }
       ],
       "challengeType": 1,
@@ -380,30 +350,23 @@
       "tests": [
         {
           "text": "User did replace <code>var</code> keyword.",
-          "testString":
-            "getUserInput => assert(!getUserInput('index').match(/var/g), 'User did replace <code>var</code> keyword.');"
+          "testString": "getUserInput => assert(!getUserInput('index').match(/var/g), 'User did replace <code>var</code> keyword.');"
         },
         {
-          "text":
-            "<code>myConcat</code> should be a constant variable (by using <code>const</code>).",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/const\\s+myConcat/g), '<code>myConcat</code> should be a constant variable (by using <code>const</code>).');"
+          "text": "<code>myConcat</code> should be a constant variable (by using <code>const</code>).",
+          "testString": "getUserInput => assert(getUserInput('index').match(/const\\s+myConcat/g), '<code>myConcat</code> should be a constant variable (by using <code>const</code>).');"
         },
         {
           "text": "<code>myConcat</code> should be a function",
-          "testString":
-            "assert(typeof myConcat === 'function', '<code>myConcat</code> should be a function');"
+          "testString": "assert(typeof myConcat === 'function', '<code>myConcat</code> should be a function');"
         },
         {
-          "text":
-            "<code>myConcat()</code> returns the correct <code>array</code>",
-          "testString":
-            "assert(() => { const a = myConcat([1], [2]); return a[0] == 1 && a[1] == 2; }, '<code>myConcat()</code> returns the correct <code>array</code>');"
+          "text": "<code>myConcat()</code> returns the correct <code>array</code>",
+          "testString": "assert(() => { const a = myConcat([1], [2]); return a[0] == 1 && a[1] == 2; }, '<code>myConcat()</code> returns the correct <code>array</code>');"
         },
         {
           "text": "<code>function</code> keyword was not used.",
-          "testString":
-            "getUserInput => assert(!getUserInput('index').match(/function/g), '<code>function</code> keyword was not used.');"
+          "testString": "getUserInput => assert(!getUserInput('index').match(/function/g), '<code>function</code> keyword was not used.');"
         }
       ],
       "challengeType": 1,
@@ -442,42 +405,31 @@
       "tests": [
         {
           "text": "User did replace <code>var</code> keyword.",
-          "testString":
-            "getUserInput => assert(!getUserInput('index').match(/var/g), 'User did replace <code>var</code> keyword.');"
+          "testString": "getUserInput => assert(!getUserInput('index').match(/var/g), 'User did replace <code>var</code> keyword.');"
         },
         {
-          "text":
-            "<code>squaredIntegers</code> should be a constant variable (by using <code>const</code>).",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/const\\s+squaredIntegers/g), '<code>squaredIntegers</code> should be a constant variable (by using <code>const</code>).');"
+          "text": "<code>squaredIntegers</code> should be a constant variable (by using <code>const</code>).",
+          "testString": "getUserInput => assert(getUserInput('index').match(/const\\s+squaredIntegers/g), '<code>squaredIntegers</code> should be a constant variable (by using <code>const</code>).');"
         },
         {
-          "text":
-            "<code>squaredIntegers</code> should be an <code>array</code>",
-          "testString":
-            "assert(Array.isArray(squaredIntegers), '<code>squaredIntegers</code> should be an <code>array</code>');"
+          "text": "<code>squaredIntegers</code> should be an <code>array</code>",
+          "testString": "assert(Array.isArray(squaredIntegers), '<code>squaredIntegers</code> should be an <code>array</code>');"
         },
         {
-          "text":
-            "<code>squaredIntegers</code> should be <code>[16, 1764, 36]</code>",
-          "testString":
-            "assert(squaredIntegers[0] === 16 && squaredIntegers[1] === 1764 && squaredIntegers[2] === 36, '<code>squaredIntegers</code> should be <code>[16, 1764, 36]</code>');"
+          "text": "<code>squaredIntegers</code> should be <code>[16, 1764, 36]</code>",
+          "testString": "assert(squaredIntegers[0] === 16 && squaredIntegers[1] === 1764 && squaredIntegers[2] === 36, '<code>squaredIntegers</code> should be <code>[16, 1764, 36]</code>');"
         },
         {
           "text": "<code>function</code> keyword was not used.",
-          "testString":
-            "getUserInput => assert(!getUserInput('index').match(/function/g), '<code>function</code> keyword was not used.');"
+          "testString": "getUserInput => assert(!getUserInput('index').match(/function/g), '<code>function</code> keyword was not used.');"
         },
         {
           "text": "loop should not be used",
-          "testString":
-            "getUserInput => assert(!getUserInput('index').match(/(for)|(while)/g), 'loop should not be used');"
+          "testString": "getUserInput => assert(!getUserInput('index').match(/(for)|(while)/g), 'loop should not be used');"
         },
         {
-          "text":
-            "<code>map</code>, <code>filter</code>, or <code>reduce</code> should be used",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/map|filter|reduce/g), '<code>map</code>, <code>filter</code>, or <code>reduce</code> should be used');"
+          "text": "<code>map</code>, <code>filter</code>, or <code>reduce</code> should be used",
+          "testString": "getUserInput => assert(getUserInput('index').match(/map|filter|reduce/g), '<code>map</code>, <code>filter</code>, or <code>reduce</code> should be used');"
         }
       ],
       "challengeType": 1,
@@ -517,22 +469,16 @@
       ],
       "tests": [
         {
-          "text":
-            "The result of <code>increment(5, 2)</code> should be <code>7</code>.",
-          "testString":
-            "assert(increment(5, 2) === 7, 'The result of <code>increment(5, 2)</code> should be <code>7</code>.');"
+          "text": "The result of <code>increment(5, 2)</code> should be <code>7</code>.",
+          "testString": "assert(increment(5, 2) === 7, 'The result of <code>increment(5, 2)</code> should be <code>7</code>.');"
         },
         {
-          "text":
-            "The result of <code>increment(5)</code> should be <code>6</code>.",
-          "testString":
-            "assert(increment(5) === 6, 'The result of <code>increment(5)</code> should be <code>6</code>.');"
+          "text": "The result of <code>increment(5)</code> should be <code>6</code>.",
+          "testString": "assert(increment(5) === 6, 'The result of <code>increment(5)</code> should be <code>6</code>.');"
         },
         {
-          "text":
-            "default parameter <code>1</code> was used for <code>value</code>.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/value\\s*=\\s*1/g), 'default parameter <code>1</code> was used for <code>value</code>.');"
+          "text": "default parameter <code>1</code> was used for <code>value</code>.",
+          "testString": "getUserInput => assert(getUserInput('index').match(/value\\s*=\\s*1/g), 'default parameter <code>1</code> was used for <code>value</code>.');"
         }
       ],
       "challengeType": 1,
@@ -570,29 +516,23 @@
       "tests": [
         {
           "text": "The result of <code>sum(0,1,2)</code> should be 3",
-          "testString":
-            "assert(sum(0,1,2) === 3, 'The result of <code>sum(0,1,2)</code> should be 3');"
+          "testString": "assert(sum(0,1,2) === 3, 'The result of <code>sum(0,1,2)</code> should be 3');"
         },
         {
           "text": "The result of <code>sum(1,2,3,4)</code> should be 10",
-          "testString":
-            "assert(sum(1,2,3,4) === 10, 'The result of <code>sum(1,2,3,4)</code> should be 10');"
+          "testString": "assert(sum(1,2,3,4) === 10, 'The result of <code>sum(1,2,3,4)</code> should be 10');"
         },
         {
           "text": "The result of <code>sum(5)</code> should be 5",
-          "testString":
-            "assert(sum(5) === 5, 'The result of <code>sum(5)</code> should be 5');"
+          "testString": "assert(sum(5) === 5, 'The result of <code>sum(5)</code> should be 5');"
         },
         {
           "text": "The result of <code>sum()</code> should be 0",
-          "testString":
-            "assert(sum() === 0, 'The result of <code>sum()</code> should be 0');"
+          "testString": "assert(sum() === 0, 'The result of <code>sum()</code> should be 0');"
         },
         {
-          "text":
-            "The <code>sum</code> function uses the <code>...</code> spread operator on the <code>args</code> parameter.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/function\\s+sum\\s*\\(\\s*...args\\s*\\)\\s*{/g), 'The <code>sum</code> function uses the <code>...</code> spread operator on the <code>args</code> parameter.');"
+          "text": "The <code>sum</code> function uses the <code>...</code> spread operator on the <code>args</code> parameter.",
+          "testString": "getUserInput => assert(getUserInput('index').match(/function\\s+sum\\s*\\(\\s*...args\\s*\\)\\s*{/g), 'The <code>sum</code> function uses the <code>...</code> spread operator on the <code>args</code> parameter.');"
         }
       ],
       "challengeType": 1,
@@ -635,20 +575,15 @@
       "tests": [
         {
           "text": "<code>arr2</code> is correct copy of <code>arr1</code>.",
-          "testString":
-            "assert(arr2.every((v, i) => v === arr1[i]), '<code>arr2</code> is correct copy of <code>arr1</code>.');"
+          "testString": "assert(arr2.every((v, i) => v === arr1[i]), '<code>arr2</code> is correct copy of <code>arr1</code>.');"
         },
         {
-          "text":
-            "<code>...</code> spread operator was used to duplicate <code>arr1</code>.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/\\[\\s*...arr1\\s*\\]/g),'<code>...</code> spread operator was used to duplicate <code>arr1</code>.');"
+          "text": "<code>...</code> spread operator was used to duplicate <code>arr1</code>.",
+          "testString": "getUserInput => assert(getUserInput('index').match(/\\[\\s*...arr1\\s*\\]/g),'<code>...</code> spread operator was used to duplicate <code>arr1</code>.');"
         },
         {
-          "text":
-            "<code>arr2</code> remains unchanged when <code>arr1</code> is changed.",
-          "testString":
-            "assert((arr1, arr2) => {arr1.push('JUN'); return arr2.length < arr1.length},'<code>arr2</code> remains unchanged when <code>arr1</code> is changed.');"
+          "text": "<code>arr2</code> remains unchanged when <code>arr1</code> is changed.",
+          "testString": "assert((arr1, arr2) => {arr1.push('JUN'); return arr2.length < arr1.length},'<code>arr2</code> remains unchanged when <code>arr1</code> is changed.');"
         }
       ],
       "challengeType": 1,
@@ -690,19 +625,15 @@
       "tests": [
         {
           "text": "the function <code>getLength()</code> returns a number.",
-          "testString":
-            "assert(typeof getLength('') === 'number', 'the function <code>getLength()</code> returns a number.');"
+          "testString": "assert(typeof getLength('') === 'number', 'the function <code>getLength()</code> returns a number.');"
         },
         {
-          "text":
-            "<code>getLength(\"FreeCodeCamp\")</code> should be <code>12</code>",
-          "testString":
-            "assert(getLength(\"FreeCodeCamp\") === 12, '<code>getLength(\"FreeCodeCamp\")</code> should be <code>12</code>');"
+          "text": "<code>getLength(\"FreeCodeCamp\")</code> should be <code>12</code>",
+          "testString": "assert(getLength(\"FreeCodeCamp\") === 12, '<code>getLength(\"FreeCodeCamp\")</code> should be <code>12</code>');"
         },
         {
           "text": "destructuring with reassignment was used",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/\\{\\s*length\\s*:\\s*len\\s*}\\s*=\\s*str/g),'destructuring with reassignment was used');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/\\{\\s*length\\s*:\\s*len\\s*}\\s*=\\s*str/g),'destructuring with reassignment was used');"
         }
       ],
       "challengeType": 1,
@@ -732,8 +663,7 @@
     },
     {
       "id": "587d7b89367417b2b2512b4a",
-      "title":
-        "Use Destructuring Assignment to Assign Variables from Nested Objects",
+      "title": "Use Destructuring Assignment to Assign Variables from Nested Objects",
       "description": [
         "We can similarly destructure <em>nested</em> objects into variables.",
         "Consider the following code:",
@@ -745,13 +675,11 @@
       "tests": [
         {
           "text": "<code>maxOfTomorrow</code> equals <code>84.6</code>",
-          "testString":
-            "assert(getMaxOfTmrw(LOCAL_FORECAST) === 84.6, '<code>maxOfTomorrow</code> equals <code>84.6</code>');"
+          "testString": "assert(getMaxOfTmrw(LOCAL_FORECAST) === 84.6, '<code>maxOfTomorrow</code> equals <code>84.6</code>');"
         },
         {
           "text": "nested destructuring was used",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/\\{\\s*tomorrow\\s*:\\s*\\{\\s*max\\s*:\\s*maxOfTomorrow\\s*\\}\\s*\\}\\s*=\\s*forecast/g),'nested destructuring was used');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/\\{\\s*tomorrow\\s*:\\s*\\{\\s*max\\s*:\\s*maxOfTomorrow\\s*\\}\\s*\\}\\s*=\\s*forecast/g),'nested destructuring was used');"
         }
       ],
       "challengeType": 1,
@@ -798,18 +726,15 @@
       "tests": [
         {
           "text": "Value of <code>a</code> should be 6, after swapping.",
-          "testString":
-            "assert(a === 6, 'Value of <code>a</code> should be 6, after swapping.');"
+          "testString": "assert(a === 6, 'Value of <code>a</code> should be 6, after swapping.');"
         },
         {
           "text": "Value of <code>b</code> should be 8, after swapping.",
-          "testString":
-            "assert(b === 8, 'Value of <code>b</code> should be 8, after swapping.');"
+          "testString": "assert(b === 8, 'Value of <code>b</code> should be 8, after swapping.');"
         },
         {
           "text": "Use array destructuring to swap a and b.",
-          "testString":
-            "// assert(/\\[\\s*(\\w)\\s*,\\s*(\\w)\\s*\\]\\s*=\\s*\\[\\s*\\2\\s*,\\s*\\1\\s*\\]/g.test(code), 'Use array destructuring to swap a and b.');"
+          "testString": "// assert(/\\[\\s*(\\w)\\s*,\\s*(\\w)\\s*\\]\\s*=\\s*\\[\\s*\\2\\s*,\\s*\\1\\s*\\]/g.test(code), 'Use array destructuring to swap a and b.');"
         }
       ],
       "challengeType": 1,
@@ -836,8 +761,7 @@
     },
     {
       "id": "587d7b8a367417b2b2512b4c",
-      "title":
-        "Use Destructuring Assignment with the Rest Operator to Reassign Array Elements",
+      "title": "Use Destructuring Assignment with the Rest Operator to Reassign Array Elements",
       "description": [
         "In some situations involving array destructuring, we might want to collect the rest of the elements into a separate array.",
         "The result is similar to <code>Array.prototype.slice()</code>, as shown below:",
@@ -850,18 +774,15 @@
       "tests": [
         {
           "text": "<code>arr</code> should be <code>[3,4,5,6,7,8,9,10]</code>",
-          "testString":
-            "assert(arr.every((v, i) => v === i + 3),'<code>arr</code> should be <code>[3,4,5,6,7,8,9,10]</code>');"
+          "testString": "assert(arr.every((v, i) => v === i + 3),'<code>arr</code> should be <code>[3,4,5,6,7,8,9,10]</code>');"
         },
         {
           "text": "destructuring was used.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/\\[\\s*\\w*\\s*,\\s*\\w*\\s*,\\s*...arr\\s*\\]/g),'destructuring was used.');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/\\[\\s*\\w*\\s*,\\s*\\w*\\s*,\\s*...arr\\s*\\]/g),'destructuring was used.');"
         },
         {
           "text": "<code>Array.slice()</code> was not used.",
-          "testString":
-            "getUserInput => assert(!getUserInput('index').match(/Array.slice/g), '<code>Array.slice()</code> was not used.');"
+          "testString": "getUserInput => assert(!getUserInput('index').match(/Array.slice/g), '<code>Array.slice()</code> was not used.');"
         }
       ],
       "challengeType": 1,
@@ -890,8 +811,7 @@
     },
     {
       "id": "587d7b8a367417b2b2512b4d",
-      "title":
-        "Use Destructuring Assignment to Pass an Object as a Function's Parameters",
+      "title": "Use Destructuring Assignment to Pass an Object as a Function's Parameters",
       "description": [
         "In some cases, you can destructure the object in a function argument itself.",
         "Consider the code below:",
@@ -906,18 +826,15 @@
       "tests": [
         {
           "text": "<code>stats</code> should be an <code>object</code>.",
-          "testString":
-            "assert(typeof stats === 'object', '<code>stats</code> should be an <code>object</code>.');"
+          "testString": "assert(typeof stats === 'object', '<code>stats</code> should be an <code>object</code>.');"
         },
         {
           "text": "<code>half(stats)</code> should be <code>28.015</code>",
-          "testString":
-            "assert(half(stats) === 28.015, '<code>half(stats)</code> should be <code>28.015</code>');"
+          "testString": "assert(half(stats) === 28.015, '<code>half(stats)</code> should be <code>28.015</code>');"
         },
         {
           "text": "Destructuring was used.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/\\(\\s*\\{\\s*\\w+\\s*,\\s*\\w+\\s*\\}\\s*\\)/g), 'Destructuring was used.');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/\\(\\s*\\{\\s*\\w+\\s*,\\s*\\w+\\s*\\}\\s*\\)/g), 'Destructuring was used.');"
         }
       ],
       "challengeType": 1,
@@ -970,20 +887,16 @@
       ],
       "tests": [
         {
-          "text":
-            "<code>resultDisplayArray</code> is a list containing <code>result failure</code> messages.",
-          "testString":
-            "assert(typeof makeList(result.failure) === 'object' && resultDisplayArray.length === 3, '<code>resultDisplayArray</code> is a list containing <code>result failure</code> messages.');"
+          "text": "<code>resultDisplayArray</code> is a list containing <code>result failure</code> messages.",
+          "testString": "assert(typeof makeList(result.failure) === 'object' && resultDisplayArray.length === 3, '<code>resultDisplayArray</code> is a list containing <code>result failure</code> messages.');"
         },
         {
           "text": "<code>resultDisplayArray</code> is the desired output.",
-          "testString":
-            "assert(makeList(result.failure).every((v, i) => v === `<li class=\"text-warning\">${result.failure[i]}</li>`), '<code>resultDisplayArray</code> is the desired output.');"
+          "testString": "assert(makeList(result.failure).every((v, i) => v === `<li class=\"text-warning\">${result.failure[i]}</li>`), '<code>resultDisplayArray</code> is the desired output.');"
         },
         {
           "text": "Template strings were used",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/\\`<li class=\"text-warning\">\\$\\{\\w+\\}<\\/li>\\`/g), 'Template strings were used');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/\\`<li class=\"text-warning\">\\$\\{\\w+\\}<\\/li>\\`/g), 'Template strings were used');"
         }
       ],
       "challengeType": 1,
@@ -1036,15 +949,12 @@
       ],
       "tests": [
         {
-          "text":
-            "the output is <code>{name: \"Zodiac Hasbro\", age: 56, gender: \"male\"}</code>.",
-          "testString":
-            "assert(() => {const res={name:\"Zodiac Hasbro\",age:56,gender:\"male\"}; const person=createPerson(\"Zodiac Hasbro\", 56, \"male\"); return Object.keys(person).every(k => person[k] === res[k]);}, 'the output is <code>{name: \"Zodiac Hasbro\", age: 56, gender: \"male\"}</code>.');"
+          "text": "the output is <code>{name: \"Zodiac Hasbro\", age: 56, gender: \"male\"}</code>.",
+          "testString": "assert(() => {const res={name:\"Zodiac Hasbro\",age:56,gender:\"male\"}; const person=createPerson(\"Zodiac Hasbro\", 56, \"male\"); return Object.keys(person).every(k => person[k] === res[k]);}, 'the output is <code>{name: \"Zodiac Hasbro\", age: 56, gender: \"male\"}</code>.');"
         },
         {
           "text": "No <code>:</code> were used.",
-          "testString":
-            "getUserInput => assert(!getUserInput('index').match(/:/g), 'No <code>:</code> were used.');"
+          "testString": "getUserInput => assert(!getUserInput('index').match(/:/g), 'No <code>:</code> were used.');"
         }
       ],
       "challengeType": 1,
@@ -1084,15 +994,12 @@
       ],
       "tests": [
         {
-          "text":
-            "<code>setGear</code> is a function and changes the <code>gear</code> variable.",
-          "testString":
-            "assert(() => { bicycle.setGear(48); return bicycle.gear === 48 }, '<code>setGear</code> is a function and changes the <code>gear</code> variable.');"
+          "text": "<code>setGear</code> is a function and changes the <code>gear</code> variable.",
+          "testString": "assert(() => { bicycle.setGear(48); return bicycle.gear === 48 }, '<code>setGear</code> is a function and changes the <code>gear</code> variable.');"
         },
         {
           "text": "Declarative function was used.",
-          "testString":
-            "getUserInput => assert(!getUserInput('index').match(/:\\s*function\\s*\\(\\)/g), 'Declarative function was used.');"
+          "testString": "getUserInput => assert(!getUserInput('index').match(/:\\s*function\\s*\\(\\)/g), 'Declarative function was used.');"
         }
       ],
       "challengeType": 1,
@@ -1136,20 +1043,16 @@
       ],
       "tests": [
         {
-          "text":
-            "<code>Vegetable</code> should be a <code>class</code> with a defined <code>constructor</code> method.",
-          "testString":
-            "assert(typeof Vegetable === 'function' && typeof Vegetable.constructor === 'function', '<code>Vegetable</code> should be a <code>class</code> with a defined <code>constructor</code> method.');"
+          "text": "<code>Vegetable</code> should be a <code>class</code> with a defined <code>constructor</code> method.",
+          "testString": "assert(typeof Vegetable === 'function' && typeof Vegetable.constructor === 'function', '<code>Vegetable</code> should be a <code>class</code> with a defined <code>constructor</code> method.');"
         },
         {
           "text": "<code>class</code> keyword was used.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/class/g),'<code>class</code> keyword was used.');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/class/g),'<code>class</code> keyword was used.');"
         },
         {
           "text": "<code>Vegetable</code> can be instantiated.",
-          "testString":
-            "assert(() => {const a = new Vegetable(\"apple\"); return typeof a === 'object';},'<code>Vegetable</code> can be instantiated.');"
+          "testString": "assert(() => {const a = new Vegetable(\"apple\"); return typeof a === 'object';},'<code>Vegetable</code> can be instantiated.');"
         }
       ],
       "challengeType": 1,
@@ -1197,20 +1100,16 @@
       ],
       "tests": [
         {
-          "text":
-            "<code>Thermostat</code> should be a <code>class</code> with a defined <code>constructor</code> method.",
-          "testString":
-            "assert(typeof Thermostat === 'function' && typeof Thermostat.constructor === 'function','<code>Thermostat</code> should be a <code>class</code> with a defined <code>constructor</code> method.');"
+          "text": "<code>Thermostat</code> should be a <code>class</code> with a defined <code>constructor</code> method.",
+          "testString": "assert(typeof Thermostat === 'function' && typeof Thermostat.constructor === 'function','<code>Thermostat</code> should be a <code>class</code> with a defined <code>constructor</code> method.');"
         },
         {
           "text": "<code>class</code> keyword was used.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/class/g),'<code>class</code> keyword was used.');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/class/g),'<code>class</code> keyword was used.');"
         },
         {
           "text": "<code>Thermostat</code> can be instantiated.",
-          "testString":
-            "assert(() => {const t = new Thermostat(32); return typeof t === 'object' && t.temperature === 0;}, '<code>Thermostat</code> can be instantiated.');"
+          "testString": "assert(() => {const t = new Thermostat(32); return typeof t === 'object' && t.temperature === 0;}, '<code>Thermostat</code> can be instantiated.');"
         }
       ],
       "challengeType": 1,
@@ -1258,8 +1157,7 @@
       "tests": [
         {
           "text": "valid <code>import</code> statement",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/import\\s+\\{\\s?capitalizeString\\s?\\}\\s+from\\s+\"string_functions\"/g), 'valid <code>import</code> statement');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/import\\s+\\{\\s?capitalizeString\\s?\\}\\s+from\\s+\"string_functions\"/g), 'valid <code>import</code> statement');"
         }
       ],
       "challengeType": 1,
@@ -1268,7 +1166,10 @@
           "key": "indexjs",
           "ext": "js",
           "name": "index",
-          "contents": ["\"use strict\";", "capitalizeString(\"hello!\");"],
+          "contents": [
+            "\"use strict\";",
+            "capitalizeString(\"hello!\");"
+          ],
           "head": [
             "window.require = function (str) {",
             "if (str === 'string_functions') {",
@@ -1296,13 +1197,11 @@
       "tests": [
         {
           "text": "<code>foo</code> is exported.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/export\\s+const\\s+foo\\s+=+\\s\"bar\"/g), '<code>foo</code> is exported.');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/export\\s+const\\s+foo\\s+=+\\s\"bar\"/g), '<code>foo</code> is exported.');"
         },
         {
           "text": "<code>bar</code> is exported.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/export\\s+const\\s+bar\\s+=+\\s\"foo\"/g), '<code>bar</code> is exported.');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/export\\s+const\\s+bar\\s+=+\\s\"foo\"/g), '<code>bar</code> is exported.');"
         }
       ],
       "challengeType": 1,
@@ -1316,7 +1215,9 @@
             "const foo = \"bar\";",
             "const bar= \"foo\";"
           ],
-          "head": ["window.exports = function(){};"],
+          "head": [
+            "window.exports = function(){};"
+          ],
           "tail": []
         }
       }
@@ -1337,8 +1238,7 @@
       "tests": [
         {
           "text": "Properly uses <code>import * as</code> syntax.",
-          "testString":
-            "assert(code.match(/import\\s+\\*\\s+as\\s+[a-zA-Z0-9_$]+\\s+from\\s*\"\\s*capitalize_strings\\s*\"\\s*;/gi), 'Properly uses <code>import * as</code> syntax.');"
+          "testString": "assert(code.match(/import\\s+\\*\\s+as\\s+[a-zA-Z0-9_$]+\\s+from\\s*\"\\s*capitalize_strings\\s*\"\\s*;/gi), 'Properly uses <code>import * as</code> syntax.');"
         }
       ],
       "challengeType": 1,
@@ -1347,7 +1247,9 @@
           "key": "indexjs",
           "ext": "js",
           "name": "index",
-          "contents": ["\"use strict\";"],
+          "contents": [
+            "\"use strict\";"
+          ],
           "head": [
             "window.require = function(str) {",
             "if (str === 'capitalize_strings') {",
@@ -1375,8 +1277,7 @@
       "tests": [
         {
           "text": "Proper used of <code>export</code> fallback.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/export\\s+default\\s+function\\s+subtract\\(x,y\\)\\s+{return\\s+x\\s-\\s+y;}/g), 'Proper used of <code>export</code> fallback.');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/export\\s+default\\s+function\\s+subtract\\(x,y\\)\\s+{return\\s+x\\s-\\s+y;}/g), 'Proper used of <code>export</code> fallback.');"
         }
       ],
       "challengeType": 1,
@@ -1389,13 +1290,15 @@
             "\"use strict\";",
             "function subtract(x,y) {return x - y;}"
           ],
-          "head": ["window.exports = function(){};"],
+          "head": [
+            "window.exports = function(){};"
+          ],
           "tail": []
         }
       }
     },
     {
-      "id": "587d7b8d367417b2b2512b59",
+      "id": "587d7b8c367417b2b2512b59",
       "title": "Import a Default Export",
       "description": [
         "In the last challenge, you learned about <code>export default</code> and its uses. It is important to note that, to import a default export, you need to use a different <code>import</code> syntax.",
@@ -1408,8 +1311,7 @@
       "tests": [
         {
           "text": "Properly imports <code>export default</code> method.",
-          "testString":
-            "getUserInput => assert(getUserInput('index').match(/import\\s+subtract\\s+from\\s+\"math_functions\"/g), 'Properly imports <code>export default</code> method.');"
+          "testString": "getUserInput => assert(getUserInput('index').match(/import\\s+subtract\\s+from\\s+\"math_functions\"/g), 'Properly imports <code>export default</code> method.');"
         }
       ],
       "challengeType": 1,
@@ -1418,7 +1320,10 @@
           "key": "indexjs",
           "ext": "js",
           "name": "index",
-          "contents": ["\"use strict\";", "subtract(7,4);"],
+          "contents": [
+            "\"use strict\";",
+            "subtract(7,4);"
+          ],
           "head": [
             "window.require = function(str) {",
             "if (str === 'math_functions') {",
@@ -1436,36 +1341,15 @@
       "description": [
         "In the lesson <a href=\"/javascript-algorithms-and-data-structures/basic-javascript/iterate-through-an-array-with-a-for-loop/\">Iterate Through an Array with a For Loop</a>, you learned how to use <i>iteration</i>, repeating a block of code multiple times, to process every element of an array. Before ES6, iteration was done using C-like for loops (<code>for (initial; final; increment) { ... }</code>) and while loops.",
         "ES6 introduced a new kind of for loop, <code>for..of</code>. This new syntax not only provides a prettier way to iterate over arrays, it allows us to use a new feature added in ES6, called <i>iterators</i>.",
-        "For now, let's get accustomed to the <code>for..of</code> syntax. Finish the following program to output each item of the <code>iteration</code> array. ",
-        "The syntax of <code>for..of</code> is\n<code>\nfor (let variable of iterable) {\n    // ...\n}\n</code>"
+        "<i>Iterators</i> allow you to customize how a certain object functions when being iterated over in a <code>for..of</code> statement.",
+        "Sometimes, code explains itself better than a human can, and this is one such case. Run the program and inspect the result in your browser console. (It's encouraged to run the program multiple times to see what's going on!)"
       ],
-      "tests": [],
+      "tests": [{
+        "text": "Run the given program",
+        "testString": "assert(true, 'Run the given program')"
+      }],
       "challengeType": 1,
-      "files": {
-        "indexjs": {
-          "key": "indexjs",
-          "ext": "js",
-          "name": "index",
-          "contents": [
-            "const iteration = [1,2,3,4]",
-            "for (x of iteration) {",
-            "  // finish the program here",
-            "}"
-          ],
-          "head": [],
-          "tail": []
-        }
-      },
-      "challengeSeed": []
-    },
-    {
-      "id": "587d7b8d367417b2b2512b5b",
-      "title": "For What?",
-      "description": [
-        "It's pretty obvious what's going through your mind.",
-        "<i>How does some fancy new for-loop syntax introduce a whole set of features in ES6?</i>",
-        "What you wrote merely scratches the surface of ES6 iterators. Iterators allows programmers to customize how an object is iterated over, so you can implement things like binary trees, or graphs."
-      ],
+      "challengeSeed": [],
       "files": {
         "indexjs": {
           "key": "indexjs",
@@ -1482,22 +1366,217 @@
           "head": [
             "// from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array",
             "const horrid_shuffler = list => list.sort(_ => 0.5 - Math.random())",
-            "",
             "const RandList = function(list) {",
-            "  this.inside = list",
             "  this[Symbol.iterator] = function() {",
-            "this.list = horrid_shuffler(list)",
-            "    this.last = 0",
+                "this.list = horrid_shuffler(list)",
+            "    this.index = 0",
             "    return {",
             "      next: () => {",
-            "        if (this.last === this.list.length) {",
+            "        if (this.index === this.list.length) {",
             "          return { done: true }",
             "        } else {",
-            "          return {value: this.list[++this.last], done: false }",
+            "          return {value: this.list[this.index++], done: false }",
             "        }",
             "      }",
             "    }",
             "  }",
+            "}"
+          ]
+        }
+      }
+    },
+    {
+      "id": "587d7b8c367417b2b2512b5b",
+      "title": "From One To The Next",
+      "challengeType": 1,
+      "challengeSeed": [],
+      "description": [
+        "You're probably rather perplexed right now, and that's OK! Iterators are strange, they take something that JavaScript developers have been accustomed to since the start of the language, and allow it to be modified in unusual ways. This isn't a bad thing, though! Iterators have a lot going for them, as many upcoming JavaScript features build upon them as well. We'll find out more about this in upcoming lessons.",
+        "Before we get to any of the cooler things, we have to start small; <i>Iterables</i>. Iterables are functions that return Iterators, and are stored in Object prototypes as <code>Symbol.iterator</code>. To introduce this syntax, the hidden code of the previous lesson is now visible in the working area in a comment. If you are unfamiliar with the <code>this</code>-syntax or the concept of Constructors, <a href='https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/object-oriented-programming/define-a-constructor-function'>this lesson</a> will help you out.",
+        "The setup is a little complicated, there's a lot of nesting involved, so we're going to break it down line-by-line.",
+        "The first line defines the <code>RandList</code> constructor, which takes one parameter, <code>list</code>. The second line defines a property of the returned Object called <code>Symbol.iterator</code> (Note that Symbol.iterator is not a string, it's a variable). This is where the relevant Iterator portion begins.",
+        "The next two lines are some initialization for iterating. <code>this.list</code> is the constructor input <code>list</code> shuffled around randomly, and <code>this.index</code> is analogous to <code>x</code> in a C-style for loop (<code> for (let x = ...) { ... }</code>), which makes it easier to keep track of our randomized list.",
+        "Moving forward, we hit our first return. Take note that the return is nested inside <code>this[Symbol.iterator]</code>, and the function <code>RandList</code> does not return a value, due to the definition of a constructor. The Iterator function returns an Object with a single method, <code>next</code>. This function takes no parameters, and increments <code>this.index</code> if the end of the list hasn't been reached. Take note of the structure of the returned Object, <code>{ value: ..., done: Boolean }</code>, as this is <strong>crucial</strong> in getting your Iterator to work! If you forget to set <code>done</code> to <code>true</code> at the end, your iterator will run <strong><i>forever!</i></strong>",
+        "Understandably, this example might seem like nothing more than an overcomplicated for-loop. While this is true, it lays the foundation for some incredibly powerful features.",
+        "Using the syntax below, define a constructor, <code>BackList</code>, that takes an input, <code>list</code>, and iterates over it backwards. Remember to pay attention to where you place <code>this[Symbol.iterator]</code> and <code>next</code>. Use your previous knowledge of Arrays and JavaScript arithmetic to go back through the list, you don't need a temporary variable to store the list in this scenario!"
+      ],
+      "tests": [{
+        "text": "Iterating over <code>BackList([1,2,3,4,5])</code> should return <code>[5,4,3,2,1]<code>.",
+        "testString": "assert(test === [5,4,3,2,1], JSON.stringify(test))"
+      }],
+      "files": {
+        "indexjs": {
+          "key": "indexjs",
+          "ext": "js",
+          "name": "index",
+          "contents": [
+            "/*",
+            "const RandList = function(list) {",
+            "  this[Symbol.iterator] = function() {",
+                "this.list = randomize(list)",
+            "    this.index = 0",
+            "    return {",
+            "      next: () => {",
+            "        if (this.index === this.list.length) {",
+            "          return { done: true }",
+            "        } else {",
+            "          return { value: this.list[this.index++], done: false }",
+            "        }",
+            "      }",
+            "    }",
+            "  }",
+            "}",
+            "*/",
+            "",
+            "const BackList = function(list) {",
+            "  this[Symbol.iterator] = function() {",
+            "    // your code here",
+            "  }",
+            "}"
+          ],
+          "tail": [
+            "const iterator = new BackList([1,2,3,4,5])",
+            "const test = []",
+            "for (let x of iterator) {",
+            "  test.push(x)",
+            "}"
+          ]
+        }
+      }
+    },
+    {
+      "id": "587d7b8d367417b2b2512b5c",
+      "title": "This Joke is Funnier Than the Last Two You Heard, Combined!",
+      "challengeType": 1,
+      "challengeSeed": [],
+      "description": [
+        "In the last lesson, we were very careful to make sure our Iterator terminated.",
+        "<i>What if it doesn't?</i> What if we wanted an Iterator that goes on forever, constantly computing values, but only when we want it to? Can Iterators be paused, and returned to later?",
+        "By using a little code inspection and some cleverness, we most certainly can! A little more code is required than our previous examples, but that's OK! We'll be able to use a neat shortcut later on, but for now, it's nice to see what we're actually doing under the hood.",
+        "Remember that for our previous examples used <code>new</code> to create the Object we wanted to iterate over fully. In order to iterate over partially, we need to go a tiny bit further.",
+        "First, we construct the Iterable as usual.",
+        "<code>const iterable = new FibIter()</code>",
+        "Next, we extract the Iterator inside into its own Object.",
+        "<code>let iterator = new iterable[Symbol.iterator]()</code>",
+        "Finally, we manually move the iterator forward using the <code>next</code> method defined in it. Since <code>next</code> returns an Object, we can access the value returned with the <code>value</code> property.",
+        "<code>iterator.next().value</code>",
+        "The syntax is undeniably a tad gross, but remember that shortcut we have coming up! For now, create an array, <code>first_five</code>, and fill it with the first five <a href='https://wikipedia.org/wiki/Fibonacci_number'>Fibonacci numbers</a>, using the syntax we discussed above, making sure to use the two given variables, <code>first_var</code> and <code>second_var</code>. Remember, this iterator is infinite, so using <code>for..of</code> will crash your browser!" 
+      ],
+      "tests": [
+      {
+        "text": "<code>first_five</code> is filled with the first five Fibonacci numbers.",
+        "testString": "assert(first_five === [1,1,2,3,5], '<code>first_five</code> is filled with the first five Fibonacci numbers')"
+      },
+      {
+        "text": "<code>second_var</code> should return 8",
+        "testString": "assert(second_var.next().value === 8, '<code>second_var</code> should return 8')"
+      }
+      ],
+      "files": {
+        "indexjs": {
+          "key": "indexjs",
+          "ext": "js",
+          "name": "index",
+          "contents": [
+            "const FibIter = function() {",
+            "  this[Symbol.iterator] = function() {",
+            "  this.first = 1",
+            "  this.second = 0",
+            "  this.first = true",
+            "  return {",
+            "    next: () => {",
+            "      if (this.first) {",
+            "        this.first = false",
+            "        // the first two fib numbers are [1,1], this ensures it",
+            "        return { value: 1, done: false }",
+            "      }",
+            "      const temp = this.first",
+            "      this.first = this.first + this.second",
+            "      this.second = temp",
+            "      return { value: this.second, done: false }",
+            "      }",
+            "    }",
+            "  }",
+            "  }",
+            "}",
+            "// let first_var = ...",
+            "// let second_var = ...",
+            "// let first_five = ..."
+
+          ]
+        }
+      }
+    },
+    {
+      "id": "587d7b8d367417b2b2512b5d",
+      "title": "Haven't We Met Before?",
+      "tests": [{
+        "text": "Run the given program",
+        "testString": "assert(true, 'The given program was run')"
+      }],
+      "description": [
+        "Believe it or not, almost everything in JavaScript is an Iterable, even stuff that came before ES6, like Arrays. The Iterators we make are just an example of the many things Iterators are good for. In previous lessons, we talked about ES6's <code>Map</code> and <code>Set</code>. These are also Iterables!",
+        "Before we move on, examine the code on the left. Run the code, and take note of the values logged into your browser console."
+      ],
+      "files": {
+        "indexjs": {
+          "key": "indexjs",
+          "ext": "js",
+          "name": "index",
+          "contents": [
+            "// Maps are Iterable",
+            "const iter_map = new Map([[1,2],[3,4]])",
+            "// notice the destructuring, remember how Maps work!",
+            "for (let [x, y] of iter_map) {",
+            "  console.log(x, 'and', y)",
+            "}",
+            "",
+            "// Sets are Iterable",
+            "const iter_set = new Set([1,2,3,4])",
+            "",
+            "for (let x of iter_set) {",
+            "  console.log(x)",
+            "}",
+            "",
+            "// Regular Arrays are Iterable",
+            "const iter_array = [1,2,3,4]",
+            "for (let x of iter_array) {",
+            "  console.log(x)",
+            "}"
+          ]
+        } 
+      }
+    },
+    {
+      "id": "587d7b8d367417b2b2512b5e",
+      "title": "Switching To Generator Power",
+      "description": [
+        "By now, you should know that a function can return only once. Once return has been called, the function will exit with a value. What if there was a way to return a value, but keep the function running?",
+        "Enter ES6 <i>Generators</i>.",
+        "The syntax of Generators is stranger than what you've come across. Iterator syntax was just a set of rules that needed to be followed, it didn't introduce new JavaScript features. Generators are different, they introduce new rules and keywords, but don't get freaked out! The syntax is not as unfamiliar as you would believe.",
+        "To start us off, log both values of <code>non_generator</code> and <code>is_generator</code> to the console, and see what's returned."
+      ],
+      "tests": [{
+        "text": "Log the return values of <code>non_generator</code> and <code>is_generator</code> to the console.",
+        "testString": "getUserInput => assert(getUserInput('index').match(/console\\\.log\\\((.*)is_generator\\\((.*)\\\)/) && getUserInput('index').match(/console\.log\((.*)non_generator\((.*)\)/), 'non_generator and is_generator were logged to the browser console')"
+      }],
+      "files": {
+        "indexjs": {
+          "key": "indexjs",
+          "ext": "js",
+          "name": "index",
+          "contents": [
+            "function non_generator() {",
+            "  return 1",
+            "  // this will never be run",
+            "  return 2",
+            "  return 3",
+            "}",
+            "",
+            "function* is_generator() {",
+            "  yield 1",
+            "  yield 2",
+            "  yield 3",
             "}"
           ]
         }
