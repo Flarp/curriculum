@@ -1387,7 +1387,7 @@
     },
     {
       "id": "587d7b8c367417b2b2512b5b",
-      "title": "From One To The Next",
+      "title": "I Can't Seem To Face Up To The Facts",
       "challengeType": 1,
       "challengeSeed": [],
       "description": [
@@ -1446,7 +1446,7 @@
     },
     {
       "id": "587d7b8d367417b2b2512b5c",
-      "title": "This Joke is Funnier Than the Last Two You Heard, Combined!",
+      "title": "This Joke is Funnier Than the Last Two Combined!",
       "challengeType": 1,
       "challengeSeed": [],
       "description": [
@@ -1567,16 +1567,100 @@
           "name": "index",
           "contents": [
             "function non_generator() {",
-            "  return 1",
-            "  // this will never be run",
-            "  return 2",
-            "  return 3",
+            "  while (true) {",
+            "    return 1",
+            "    // this will never be run",
+            "    return 2",
+            "    return 3",
+            "  }",
             "}",
             "",
             "function* is_generator() {",
+            "  while (true) {",
+            "    yield 1",
+            "    yield 2",
+            "    yield 3",
+            "  }",
+            "}"
+          ]
+        }
+      }
+    },
+    {
+      "id": "587d7b8d367417b2b2512b5f",
+      "title": "Drive Like a Demon, From Generation To Generation",
+      "description": [
+        "That probably wasn't what you expected from a function call, but generators are not normal functions! You can tell from the star and <code>yield</code> that there's something special about them.",
+        "Generator functions don't return in a normal sense, they <i>yield</i>. This \"pauses\" the function, allowing it to be resumed at another time, and returning the yielded value.",
+        "They also aren't called in the normal sense, as generators don't follow the conventional <code>func(x,y,z)</code> syntax. Instead, they opt for something between a constructor and an Iterator. ",
+        "<pre>let z = forever_upward()\nz.next().value</pre>",
+        "Looking at the code for <code>forever_upwards</code> to the left, you can also see that the concept of scope is slightly different in generators. Where as returning in a normal function would destroy all variables inside the scope, generators retain the variables, so they can be used over and over again. Generators also use the <code>next</code> syntax that Iterators use.",
+        "Going off of the example code, your job is to build the function <code>fibonacci</code>, which calculates the next Fibonacci number forever. The first parts have been filled out for you, your task is to complete the function."
+      ],
+      "tests": [{
+        "text": "<code>fibonacci()</code> returns [1,1,2,3,5] when called five times",
+        "testString": "assert((() => { let temp = fibonacci(); return [1,1,1,1,1].map(_ => temp.next().value) })() === [1,1,2,3,5], 'fibonacci() returns the first five Fibonacci numbers when called five times')"
+      },
+      {
+        "text": "The first five Fibonacci numbers are not present in the code",
+        "testString": "getUserInput => assert(!getUserInput('index').match(/2(.*)\\\,(.*)3(.*)\\\,(.*)5/), 'The first five Fibonacci numbers are not present in the code')"
+      }
+      ],
+      "files": {
+        "indexjs": {
+          "key": "indexjs",
+          "ext": "js",
+          "name": "index",
+          "contents": [
+            "function* forever_upward() {",
+            "  let initial = 1",
+            "  while (true) {",
+            "    yield initial",
+            "    initial++",
+            "  }",
+            "}",
+            "",
+            "let upwards = forever_upward()",
+            "console.log(upwards.next().value === 1, upwards.next().value === 2)",
+            "",
+            "function* fibonacci() {",
             "  yield 1",
-            "  yield 2",
-            "  yield 3",
+            "  yield 1",
+            "  let first = 1",
+            "  let second = 1",
+            "  while (true) {",
+            "    // start here!",
+            "  }"
+          ]
+        }
+      }
+    },
+    {
+      "id": "587d7b8d367417b2b2512b60",
+      "title": "Arguing With A Generator",
+      "description": [
+        "So far, we've looked at generators that do the same thing no matter how they're called. That's unrealistic, functions usually take arguments. In keeping with their odd spirit, generator functions have two ways of taking arguments, initially or progressively. The initial way is shown in the example <code>collatz</code> function below, which is pretty much how normal functions take arguments."
+      ],
+      "files": {
+        "indexjs": {
+          "key": "indexjs",
+          "ext": "js",
+          "name": "index",
+          "contents": [
+            "function* collatz(number) {",
+            "  let z = number",
+            "  while (z !== 1) {",
+            "    if (z % 2 === 0) {",
+            "      z /= 2",
+            "    } else {",
+            "      z = (3*z) + 1",
+            "    }",
+            "    yield z",
+            "  }",
+            "}",
+            "",
+            "for (let num of collatz(7)) {",
+            "  console.log(num)",
             "}"
           ]
         }
