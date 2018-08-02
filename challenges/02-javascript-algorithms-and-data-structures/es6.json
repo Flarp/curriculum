@@ -1639,7 +1639,29 @@
       "id": "587d7b8d367417b2b2512b60",
       "title": "Arguing With A Generator",
       "description": [
-        "So far, we've looked at generators that do the same thing no matter how they're called. That's unrealistic, functions usually take arguments. In keeping with their odd spirit, generator functions have two ways of taking arguments, initially or progressively. The initial way is shown in the example <code>collatz</code> function below, which is pretty much how normal functions take arguments."
+        "So far, we've looked at generators that do the same thing no matter how they're called. That's unrealistic, functions usually take arguments. In keeping with their odd spirit, generator functions have two ways of taking arguments, initially or progressively. The initial way is shown in the example <code>collatz</code> function below, which is pretty much how normal functions take arguments.",
+        "The other way generators take arguments is with the <code>next</code> function, because yielding can also be analogized to a synchronous read-line function. Take the following code as example",
+        "<pre>function* test() {\n\tconst z = yield 7\n\tyield z}\n\nconst gen = test()\nconsole.log(gen.next(5).value)\n// 7 \n\nconsole.log(g.next())\n// 5</pre>",
+        "When the function is paused the first time, <code>5</code> is passed to it, which is returned from the <code>yield</code>, and stored in <code>z</code>. We had previously only used <code>yield</code> as a statement, disregarding the result.",
+        "In order to demonstrate your knowledge of providing generators with arguments, create the body of the generator function <code>TFlipFlop</code>, which emulates a real-life <a href='https://wikibooks.org/wiki/Digital_Circuits/Flip-Flops/T_Flip-Flops'>T Flip Flop</a>."
+      ],
+      "tests": [
+        {
+          "text": "Passing a <code>0</code> to a T-flip-flop with an internal state of <code>0</code> should not change the state.",
+          "testString": "assert(flop_assert(0, 0), 'State of 0 holds when t=0')"
+        },
+        {
+          "text": "Passing a <code>1</code> to a T-flip-flop with an internal state of <code>0</code> should toggle the state",
+          "testString": "assert(flop_assert(1, 1), 'State of 0 toggles when t=1')"
+        },
+        {
+          "text": "Passing a <code>0</code> to a T-flip-flop with an internal state of <code>0</code> should not change the state.",
+          "testString": "assert(flop_assert(0, 1), 'State of 1 holds when t=0')"
+        },
+        {
+          "text": "Passing a <code>1</code> to a T-flip-flop with an internal state of <code>1</code> should toggle the state",
+          "testString": "assert(flop_assert(1, 0), 'State of 1 toggles when t=1')"
+        }
       ],
       "files": {
         "indexjs": {
@@ -1661,8 +1683,93 @@
             "",
             "for (let num of collatz(7)) {",
             "  console.log(num)",
+            "}",
+            "",
+            "function* TFlipFlop() {",
+            "  let state = 0",
+            "  // start here!",
+            ""
+          ],
+          "tail": [
+            "const flop = TFlipFlop()",
+            "const flop_assert = (t, expected_state) => {",
+            "  flop.next(t)",
+            "  return flop.next().value === expected_state",
             "}"
           ]
+        }
+      }
+    },
+    {
+      "title": "Haven't We Met Before? II",
+      "id": "587d7b8d367417b2b2512b61",
+      "description": [
+        "Hopefully by now you've put two and two together, and realized the most important thing about how generators work.",
+        "<i>They're just fancy Iterators</i>",
+        "The <code>next</code> function, the <code>for..of</code> syntax, the <code>{ value, done }</code> return value, it's all the same as Iterators! All of the generators we have done can be expressed as Iterators, just with more code. We had previously only written Iterators whose <code>next</code> functions took no arguments, but they most certainly can.",
+        "To solidify this, rewrite the <code>TFlipFlop</code> generator as an Iterator. It should work the exact same way."
+      ],
+      "tests": [
+        {
+          "text": "Passing a <code>0</code> to a T-flip-flop with an internal state of <code>0</code> should not change the state.",
+          "testString": "assert(flop_assert(0, 0), 'State of 0 holds when t=0')"
+        },
+        {
+          "text": "Passing a <code>1</code> to a T-flip-flop with an internal state of <code>0</code> should toggle the state",
+          "testString": "assert(flop_assert(1, 1), 'State of 0 toggles when t=1')"
+        },
+        {
+          "text": "Passing a <code>0</code> to a T-flip-flop with an internal state of <code>0</code> should not change the state.",
+          "testString": "assert(flop_assert(0, 1), 'State of 1 holds when t=0')"
+        },
+        {
+          "text": "Passing a <code>1</code> to a T-flip-flop with an internal state of <code>1</code> should toggle the state",
+          "testString": "assert(flop_assert(1, 0), 'State of 1 toggles when t=1')"
+        }
+      ],
+      "files": {
+        "indexjs": {
+          "key": "indexjs",
+          "ext": "js",
+          "name": "index",
+          "contents": [
+            "function TFlopFlop() {",
+            "  this.state = 0",
+            "  this[Symbol.iterator] = function() {",
+            "    // start here",
+            "  }",
+            "}"
+          ],
+          "tail": [
+            "const flop = (new TFlipFlop())[Symbol.iterator]()",
+            "const flop_assert = (t, expected_state) => {",
+            "  flop.next(t)",
+            "  return flop.next().value === expected_state",
+            "}"
+          ]
+        }
+      }
+    },
+    {
+      "id": "587d7b8d367417b2b2512b62",
+      "title": "A Final Word About Generators and Iterators",
+      "tests": [{
+          "text": "Hit run to move on!",
+          "testString": "assert(true, '')"
+      }],
+      "descripton": [
+        "Generators and Iterators have a lot going for them. They may not seem very useful in the ways we've used them, but in later lessons where you begin working with server-side programming and asychronous programming, you'll see where they start to shine.",
+        "A new ES8 proposal called <i>async/await</i> is even more sugar over ES6 Generators, allowing code that uses Promises (similar to callbacks), to be written as if it were synchronous.",
+        "<pre>async function webcall() {\n\tlet site = await fetch('...')\n\tlet text = await site.text()\n\treturn Promise.resolve(text)\n}",
+        "This syntax can be emulated today with the <a href='https://npmjs.org/package/co'><code>co</code>(routine)</a> library and Generators.",
+        "<pre>const co = require('co')\n\nlet webcall = co.wrap(function* () {\n\tlet site = yield fetch('...')\n\tlet text = yield site.text()\n\treturn Promise.resolve(text))"
+      ],
+      "files": {
+        "indexjs": {
+          "name": "index",
+          "ext": "js",
+          "key": "indexjs",
+          "contents": ["console.log('Farewell, FCC Generators and Iterators!')"]
         }
       }
     }
